@@ -2792,10 +2792,10 @@ function submitWL(){
     localStorage.setItem('wl',JSON.stringify(e));
   }catch(e){}
   // Submit to Google Form — replace FORM_ID and entry IDs with your real ones
-  const url='https://docs.google.com/forms/d/e/YOUR_FORM_ID_HERE/formResponse';
+  const url='https://docs.google.com/forms/d/e/1FAIpQLScUeD7yHcovbpc5fgharA81-lnJT6RljanIFa5S9-mNDDFujg/formResponse';
   const body=new URLSearchParams();
-  body.append('entry.XXXXXXXXX','@'+xVal);
-  body.append('entry.YYYYYYYYY',wallet);
+  body.append('entry.875593583','@'+xVal);
+  body.append('entry.484593186',wallet);
   fetch(url,{method:'POST',mode:'no-cors',body}).then(()=>showWLSuccess()).catch(()=>showWLSuccess());
 }
 function showWLSuccess(){
