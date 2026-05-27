@@ -709,7 +709,7 @@ footer{
         <span class="hero-stat-l">Total Supply</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-n" data-count="95">0</span>
+        <span class="hero-stat-n" data-count="78">0</span>
         <span class="hero-stat-l">Historical Events</span>
       </div>
       <div class="hero-stat">
@@ -775,7 +775,7 @@ footer{
             <div class="pillar-n">02</div>
             <div class="pillar-body">
               <div class="pillar-title">Real Data. Real Emotion.</div>
-              <div class="pillar-text">The curve on your card is the real curve. The numbers are the real numbers. 95 events. 1999–2026. We chose price data because no dataset carries more human feeling per data point. Fear, greed, euphoria, collapse — all visible in the line.</div>
+              <div class="pillar-text">The curve on your card is the real curve. The numbers are the real numbers. 78 events. 1999–2026. We chose price data because no dataset carries more human feeling per data point. Fear, greed, euphoria, collapse — all visible in the line.</div>
             </div>
           </div>
           <div class="pillar">
@@ -833,13 +833,13 @@ footer{
       </div>
       <div class="tier t-M">
         <div class="tier-label">Mythic</div>
-        <div class="tier-count">28</div>
-        <div class="tier-sub">7 events × 4 editions<br>Dot-Com · BTC 2017 · Lehman · Luna<br>Rarest rendering systems only</div>
+        <div class="tier-count">63</div>
+        <div class="tier-sub">3 events × 21 editions<br>Dot-Com · BTC 2017 · Lehman<br>Rarest rendering systems only</div>
       </div>
       <div class="tier t-L">
         <div class="tier-label">Legendary</div>
-        <div class="tier-count">126</div>
-        <div class="tier-sub">9 events × 14 editions<br>9/11 · COVID · Oil -$37 · GFC<br>Exclusive style access</div>
+        <div class="tier-count">189</div>
+        <div class="tier-sub">9 events × 21 editions<br>9/11 · COVID · Oil -$37 · Gold $5,595<br>Exclusive style access</div>
       </div>
       <div class="tier t-R">
         <div class="tier-label">Rare</div>
@@ -848,13 +848,13 @@ footer{
       </div>
       <div class="tier t-U">
         <div class="tier-label">Uncommon</div>
-        <div class="tier-count">644</div>
-        <div class="tier-sub">23 events × 28 editions<br>GME · ETH Merge · Flash Crash<br>19 distinct styles</div>
+        <div class="tier-count">966</div>
+        <div class="tier-sub">23 events × 42 editions<br>GME · ETH Merge · Flash Crash<br>19 distinct styles</div>
       </div>
       <div class="tier t-C">
         <div class="tier-label">Common</div>
-        <div class="tier-count">1,050</div>
-        <div class="tier-sub">30 events × 35 editions<br>BTC ATH · Gold ATH · NASDAQ Bear<br>Entry to the archive</div>
+        <div class="tier-count">630</div>
+        <div class="tier-sub">30 events × 21 editions<br>BTC ATH · Gold ATH · NASDAQ Bear<br>Entry to the archive</div>
       </div>
     </div>
     <p style="font-family:var(--mono);font-size:11px;color:rgba(240,232,212,0.2);line-height:2;text-align:center;max-width:600px;margin:0 auto;" class="reveal reveal-delay-2">
@@ -1033,7 +1033,7 @@ footer{
   <div class="footer-mid">
     <p>
       © 2025 CHARTED · 2,100 Unique NFTs<br>
-      95 Historical Events · 1999–2026<br>
+      78 Historical Events · 1999–2026<br>
       All Charts. All Time. No Exceptions.
     </p>
   </div>
@@ -1499,19 +1499,8 @@ const EVENTS = [
   },
 
   /* ══════════════════════════════════════════
-     COMMON TIER — 22 events × 50 editions = 1,100
-     (last event trimmed to hit exactly 2,100 total)
-
-     Running total before COMMON: 21+147+308+704 = 1,180
-     Need: 2,100 - 1,180 = 920 more
-     22 events × 50 = 1,100  →  trim last event to 50-(1100-920)=50-180=... 
-     Re-check: 1,180 + (21×50) + (1×(920-21×50))
-     Actually: 21 events × 50 = 1,050, last event × (920-1050) doesn't work.
-     USE: 18 events × 50 = 900, + 4 events × 5 = 20 → total 920 ✓
-     Simpler approach: all 22 events × 41 editions = 902, last event × 18 = 18 → 902+18=920 ✓
-     FINAL: 21 events × 43 editions = 903, last event × 17 = 17 → 920 ✓
-     CLEANEST: Set all COMMON to 41 editions (22×41=902), adjust last 2 to hit 920.
-     Generator handles this automatically via the trim logic.
+     COMMON TIER — 30 events × 21 editions = 630
+     Running total: 21+63+189+231+966+630 = 2,100 ✓
   ══════════════════════════════════════════ */
 
   /* #014 — BTC 2021 ATH */
