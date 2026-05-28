@@ -4,6 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CHARTED — The Algorithm Is The Art</title>
+
+<!-- SEO -->
+<meta name="description" content="2,100 generative NFTs built from real historical price data. 78 events. 1999–2026. 19 rendering engines. No AI. The algorithm is the artist.">
+<meta name="keywords" content="CHARTED, NFT, generative art, financial history, Bitcoin, crypto, price chart, ERC-721">
+
+<!-- Open Graph — controls how the link looks when shared on X, Discord, Telegram -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chartednft.github.io">
+<meta property="og:title" content="CHARTED — The Algorithm Is The Art">
+<meta property="og:description" content="2,100 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
+<meta property="og:image" content="https://chartednft.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@chartedNFT">
+<meta name="twitter:creator" content="@chartedNFT">
+<meta name="twitter:title" content="CHARTED — The Algorithm Is The Art">
+<meta name="twitter:description" content="2,100 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
+<meta name="twitter:image" content="https://chartednft.github.io/og-image.png">
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Special+Elite&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════
@@ -644,6 +665,18 @@ footer{
   .hero{padding:60px 20px 50px;}
   .carousel-header{padding:0 20px;}
 }
+
+/* FAQ */
+.faq-item{border-bottom:1px solid rgba(26,16,8,0.1);}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;cursor:pointer;font-family:var(--display);font-weight:700;font-size:16px;color:var(--ink);transition:color .2s;gap:16px;user-select:none;}
+.faq-q:hover{color:rgba(26,16,8,0.6);}
+.faq-arrow{font-size:18px;color:rgba(26,16,8,0.3);transition:transform .3s;flex-shrink:0;}
+.faq-q.open .faq-arrow{transform:rotate(180deg);}
+.faq-a{font-family:var(--serif);font-size:13.5px;line-height:1.9;color:rgba(26,16,8,0.58);max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0;}
+.faq-a.open{max-height:400px;padding-bottom:20px;}
+
+/* Roadmap pulse dot */
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(1.4);}}
 </style>
 </head>
 <body>
@@ -657,9 +690,10 @@ footer{
     <a href="#collection">Collection</a>
     <a href="#tiers">Tiers</a>
     <a href="#timeline">History</a>
-    <a href="#styles">Styles</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#faq">FAQ</a>
   </div>
-  <a href="#collection" class="nav-right">View Collection</a>
+  <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" class="nav-right">Follow @chartedNFT ↗</a>
 </nav>
 
 <!-- TICKER -->
@@ -748,7 +782,19 @@ footer{
 
 </div>
 
-<!-- WHY UNIQUE -->
+<!-- CREDIBILITY STRIP -->
+<div style="border-bottom:1px solid rgba(26,16,8,0.12);background:var(--paper3);padding:14px 40px;overflow:hidden;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:0;flex-wrap:wrap;">
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">ERC-721 Standard</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">Ethereum Mainnet</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">Mint: 0.001 ETH</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">2,100 Hard Cap</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">Seeded On-Chain</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">Zero AI Generation</div>
+    <div style="padding:0 28px;border-right:1px solid rgba(26,16,8,0.12);font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">No Pre-Made Assets</div>
+    <div style="padding:0 28px;font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(26,16,8,0.4);text-transform:uppercase;text-align:center;">2000×2000px Output</div>
+  </div>
+</div>
 <section class="section why-section" id="about">
   <div class="section-inner">
     <div class="why-grid">
@@ -926,6 +972,153 @@ footer{
   </div>
 </section>
 
+<!-- ROADMAP -->
+<section class="section" id="roadmap" style="border-top:2px solid var(--ink);background:var(--paper2);">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="s-label">What Comes Next</div>
+      <div class="s-title">Roadmap.</div>
+      <div class="s-rule"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid rgba(26,16,8,0.15);" class="reveal">
+
+      <div style="padding:32px 28px;border-right:1px solid rgba(26,16,8,0.12);position:relative;">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Phase I · Now</div>
+        <div style="font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);margin-bottom:14px;line-height:1.1;">Build the List</div>
+        <div style="width:32px;height:1px;background:var(--gold);margin-bottom:16px;"></div>
+        <ul style="list-style:none;padding:0;font-family:var(--serif);font-size:13px;color:rgba(26,16,8,0.55);line-height:2.4;">
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--gold);">✦</span> Site launch</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--gold);">✦</span> Whitelist open</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--gold);">✦</span> Collection preview live</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--gold);">✦</span> @chartedNFT on X</li>
+        </ul>
+        <div style="position:absolute;top:20px;right:20px;width:8px;height:8px;border-radius:50%;background:var(--gold);animation:pulse-dot 2s ease-in-out infinite;"></div>
+      </div>
+
+      <div style="padding:32px 28px;border-right:1px solid rgba(26,16,8,0.12);">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(26,16,8,0.35);margin-bottom:12px;">Phase II · TBA</div>
+        <div style="font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);margin-bottom:14px;line-height:1.1;">The Mint</div>
+        <div style="width:32px;height:1px;background:rgba(26,16,8,0.2);margin-bottom:16px;"></div>
+        <ul style="list-style:none;padding:0;font-family:var(--serif);font-size:13px;color:rgba(26,16,8,0.45);line-height:2.4;">
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Whitelist mint window</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Public mint opens</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Cards generate on-chain</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Metadata revealed</li>
+        </ul>
+      </div>
+
+      <div style="padding:32px 28px;border-right:1px solid rgba(26,16,8,0.12);">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(26,16,8,0.35);margin-bottom:12px;">Phase III · Post-Mint</div>
+        <div style="font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);margin-bottom:14px;line-height:1.1;">The Gallery</div>
+        <div style="width:32px;height:1px;background:rgba(26,16,8,0.2);margin-bottom:16px;"></div>
+        <ul style="list-style:none;padding:0;font-family:var(--serif);font-size:13px;color:rgba(26,16,8,0.45);line-height:2.4;">
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Holder-only gallery</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Trait &amp; rarity explorer</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Card verify tool</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Secondary market TBA</li>
+        </ul>
+      </div>
+
+      <div style="padding:32px 28px;">
+        <div style="font-family:var(--mono);font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(26,16,8,0.35);margin-bottom:12px;">Phase IV · Future</div>
+        <div style="font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);margin-bottom:14px;line-height:1.1;">The Archive</div>
+        <div style="width:32px;height:1px;background:rgba(26,16,8,0.2);margin-bottom:16px;"></div>
+        <ul style="list-style:none;padding:0;font-family:var(--serif);font-size:13px;color:rgba(26,16,8,0.45);line-height:2.4;">
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> New events added</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Holder community</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> Provenance dashboard</li>
+          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:rgba(26,16,8,0.2);">◇</span> TBA</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="border-top:2px solid var(--ink);">
+  <div class="section-inner" style="max-width:820px;">
+    <div class="reveal">
+      <div class="s-label">Common Questions</div>
+      <div class="s-title">FAQ.</div>
+      <div class="s-rule"></div>
+    </div>
+    <div class="reveal" id="faqList">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>When is the mint?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Mint date is TBA. Follow <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline;">@chartedNFT</a> on X for the announcement. Whitelist applicants will be contacted before the public date is posted.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What is the mint price?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Mint price is <strong>0.001 ETH</strong> on Ethereum Mainnet. You'll need an Ethereum wallet (MetaMask, Rabby, Coinbase Wallet etc.) with enough ETH to cover the mint price plus gas. Whitelist holders get priority access in the early window before public mint opens.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What chain is CHARTED on?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">CHARTED is on <strong>Ethereum Mainnet</strong> (ERC-721). You'll need an Ethereum-compatible wallet — MetaMask, Rabby, or Coinbase Wallet — with ETH for the 0.001 ETH mint price plus gas fees.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Does the art change after mint? Can it be lost?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">No. Every card is generated by a seeded algorithm tied to the token ID. The seed is permanent — the same input always produces the same card, forever. There is no IPFS link to expire, no server to go down. The output is computed from the seed, not stored. In 100 years anyone can regenerate your exact card from the token ID alone.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Can I see my card before mint?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">The specific card you receive depends on your token ID, which is assigned at mint. However — every rendering style and event visible on this site is exactly how the final cards look. The collection preview shows real outputs from the actual engine. No post-processing, no enhancement.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What does being on the whitelist get me?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Whitelist gives you priority access — an early mint window before the public. It does not guarantee allocation if supply runs out before your window. We'll confirm details per applicant before mint day.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>What is an Artifact? Are they really 1-of-1?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Yes. The 21 Artifact cards are true 1-of-1s — one edition per event, never repeated. They cover the most singular moments in financial history: Bitcoin Pizza Day, the Genesis Block, the Bitcoin Whitepaper, Satoshi's last post, the DAO hack, Mt. Gox collapse, and more. Each renders in the Gold Deed format, exclusive to this tier.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How does the supply of 2,100 relate to Bitcoin?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Bitcoin's hard cap is 21,000,000. Divide by 10,000 and you get 2,100. The supply is not arbitrary — it's a direct reference to the asset that inspired the entire collection. If you caught that before reading this, you already know what kind of collection this is.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Was AI used to generate the art?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">No. Every visual element is computed by custom rendering engines written from scratch. No AI generation, no Stable Diffusion, no Midjourney, no pre-made assets. The Heavy Pencil engine alone plots 60,000 individually calculated grain pixels per card. The algorithm is the artist.</div>
+      </div>
+
+      <div class="faq-item" style="border-bottom:none;">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Where can I trade after mint?</span><span class="faq-arrow">↓</span>
+        </div>
+        <div class="faq-a">Secondary market details will be announced post-mint. We'll also launch a holder gallery and trait explorer at this domain after mint completes.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section cta-section" id="mint">
   <div class="cta-bg-text">CHARTED</div>
@@ -936,14 +1129,14 @@ footer{
       <em>financial history.</em>
     </div>
     <p class="cta-sub">
-      2,100 generative pieces. 95 real events. 19 rendering engines.<br>
+      2,100 generative pieces. 78 real events. 19 rendering engines.<br>
       The algorithm runs. The output is permanent. The card is yours.
     </p>
     <div class="hero-cta" style="justify-content:center;">
-      <a href="#collection" class="btn-gold">View Collection</a>
-      <a href="#tiers" class="btn-ghost">Explore Tiers</a>
+      <a href="#whitelist" class="btn-gold">Apply for Whitelist</a>
+      <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" class="btn-ghost">Follow @chartedNFT ↗</a>
     </div>
-    <div class="cta-note">Coming Soon · Follow @chartedNFT for Launch Details</div>
+    <div class="cta-note">Mint Price: 0.001 ETH · Ethereum Mainnet · Date: TBA · Follow @chartedNFT</div>
   </div>
 </section>
 
@@ -958,7 +1151,7 @@ footer{
       <div style="font-family:var(--fraktur);font-size:clamp(38px,6vw,64px);color:var(--ink);line-height:1.1;margin-bottom:16px;">Reserve Your Spot</div>
       <div style="width:60px;height:1px;background:var(--gold);margin:0 auto 20px;"></div>
       <p style="font-family:var(--serif);font-size:14px;color:rgba(26,16,8,0.5);line-height:1.9;max-width:480px;margin:0 auto;">
-        Whitelist is limited. Submit your details below to be considered for early access before public mint. We'll reach out on X.
+        Whitelist gives you priority access before public mint. Fill in your details — we'll reach out on X when the date is confirmed.
       </p>
     </div>
 
@@ -1003,7 +1196,7 @@ footer{
         </button>
 
         <p style="font-family:var(--mono);font-size:8px;color:rgba(26,16,8,0.28);text-align:center;margin-top:16px;letter-spacing:1px;">
-          No email required · No spam · Whitelist is selective
+          Whitelist = priority access, not guaranteed allocation · No spam · Data used for mint only
         </p>
       </div>
 
@@ -1014,7 +1207,7 @@ footer{
         <div style="width:40px;height:1px;background:var(--gold);margin:0 auto 16px;"></div>
         <p style="font-family:var(--serif);font-size:13px;color:rgba(26,16,8,0.5);line-height:1.8;">
           We'll review your application and follow up on X.<br>
-          Follow <strong>@chartedNFT</strong> for mint announcement.
+          Follow <strong><a href="https://x.com/chartedNFT" target="_blank" rel="noopener" style="color:var(--ink);">@chartedNFT</a></strong> for mint announcement.
         </p>
       </div>
     </div>
@@ -1036,12 +1229,20 @@ footer{
       78 Historical Events · 1999–2026<br>
       All Charts. All Time. No Exceptions.
     </p>
+    <p style="margin-top:12px;font-family:var(--mono);font-size:9px;letter-spacing:2px;">
+      <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" style="color:rgba(26,16,8,0.4);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='rgba(26,16,8,0.8)'" onmouseout="this.style.color='rgba(26,16,8,0.4)'">@chartedNFT on X ↗</a>
+      &nbsp;·&nbsp;
+      <a href="#whitelist" style="color:rgba(26,16,8,0.4);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='rgba(26,16,8,0.8)'" onmouseout="this.style.color='rgba(26,16,8,0.4)'">Join Whitelist</a>
+      &nbsp;·&nbsp;
+      <a href="#faq" style="color:rgba(26,16,8,0.4);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='rgba(26,16,8,0.8)'" onmouseout="this.style.color='rgba(26,16,8,0.4)'">FAQ</a>
+    </p>
   </div>
   <div class="footer-right">
     <p>
-      ERC-721 · 2000×2000px<br>
+      ERC-721 · Ethereum Mainnet<br>
       19 Rendering Systems<br>
-      Seeded Deterministic Output
+      Seeded Deterministic Output<br>
+      Mint Price: 0.001 ETH
     </p>
   </div>
 </footer>
@@ -2772,15 +2973,13 @@ function submitWL(){
   errEl.style.display='none';
   if(!xVal){errEl.textContent='Please enter your X username.';errEl.style.display='block';return;}
   if(!wallet){errEl.textContent='Please enter your wallet address.';errEl.style.display='block';return;}
-  if(!wallet.match(/^0x[a-fA-F0-9]{40}$/)){errEl.textContent='Please enter a valid EVM wallet (0x...).';errEl.style.display='block';return;}
+  if(!wallet.match(/^0x[a-fA-F0-9]{40}$/)){errEl.textContent='Please enter a valid Ethereum wallet address (0x...).';errEl.style.display='block';return;}
   btn.textContent='Submitting...';btn.disabled=true;
-  // Store locally
   try{
     const e=JSON.parse(localStorage.getItem('wl')||'[]');
     e.push({x:'@'+xVal,wallet,ts:new Date().toISOString()});
     localStorage.setItem('wl',JSON.stringify(e));
   }catch(e){}
-  // Submit to Google Form — replace FORM_ID and entry IDs with your real ones
   const url='https://docs.google.com/forms/d/e/1FAIpQLScUeD7yHcovbpc5fgharA81-lnJT6RljanIFa5S9-mNDDFujg/formResponse';
   const body=new URLSearchParams();
   body.append('entry.875593583','@'+xVal);
@@ -2790,6 +2989,21 @@ function submitWL(){
 function showWLSuccess(){
   document.getElementById('wlForm').style.display='none';
   document.getElementById('wlSuccess').style.display='block';
+}
+
+/* ── FAQ TOGGLE ── */
+function toggleFaq(el){
+  const isOpen=el.classList.contains('open');
+  // close all
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.classList.remove('open');
+    q.nextElementSibling.classList.remove('open');
+  });
+  // open clicked if it was closed
+  if(!isOpen){
+    el.classList.add('open');
+    el.nextElementSibling.classList.add('open');
+  }
 }
 
 </script>
