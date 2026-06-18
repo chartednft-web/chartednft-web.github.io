@@ -6,14 +6,14 @@
 <title>CHARTED — The Algorithm Is The Art</title>
 
 <!-- SEO -->
-<meta name="description" content="2,100 generative NFTs built from real historical price data. 78 events. 1999–2026. 19 rendering engines. No AI. The algorithm is the artist.">
+<meta name="description" content="338 generative NFTs built from real historical price data. 78 events. 1999–2026. 19 rendering engines. No AI. The algorithm is the artist.">
 <meta name="keywords" content="CHARTED, NFT, generative art, financial history, Bitcoin, crypto, price chart, ERC-721">
 
 <!-- Open Graph — controls how the link looks when shared on X, Discord, Telegram -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chartednft.github.io">
 <meta property="og:title" content="CHARTED — The Algorithm Is The Art">
-<meta property="og:description" content="2,100 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
+<meta property="og:description" content="338 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
 <meta property="og:image" content="https://chartednft.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -23,7 +23,7 @@
 <meta name="twitter:site" content="@chartedNFT">
 <meta name="twitter:creator" content="@chartedNFT">
 <meta name="twitter:title" content="CHARTED — The Algorithm Is The Art">
-<meta name="twitter:description" content="2,100 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
+<meta name="twitter:description" content="338 generative NFTs. 78 real market events. 19 rendering engines. No AI. The curve is the art.">
 <meta name="twitter:image" content="https://chartednft.github.io/og-image.png">
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IM+Fell+English:ital@0;1&family=Special+Elite&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 <style>
@@ -31,7 +31,38 @@
    CHARTED — DARK TRADING TERMINAL THEME
    Candlestick / wick aesthetic
 ═══════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=UnifrakturMaguntia&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=UnifrakturMaguntia&family=Special+Elite&family=Caveat:wght@400;700&display=swap');
+
+/* Red marker hand-written styles */
+.marker-struck{
+  position:relative;
+  text-decoration:line-through;
+  text-decoration-color:#e8404a;
+  text-decoration-thickness:2px;
+  opacity:0.6;
+}
+.marker-new{
+  font-family:'Caveat',cursive;
+  font-weight:700;
+  font-size:1.3em;
+  color:#ff5566;
+  position:relative;
+  display:inline-block;
+  transform:rotate(-2deg);
+  text-decoration:underline wavy #ff5566;
+}
+.marker-x{
+  position:relative;
+  display:inline-block;
+}
+.marker-x::before,
+.marker-x::after{
+  content:'';position:absolute;inset:50%;width:120%;height:2px;
+  background:#e8404a;transform-origin:center;
+}
+.marker-x::before{transform:translate(-50%,-50%) rotate(45deg);}
+.marker-x::after{transform:translate(-50%,-50%) rotate(-45deg);}
+
 
 :root{
   /* Core palette */
@@ -949,11 +980,11 @@ footer::before{
     <div class="hero-title" style="position:relative;display:inline-block;margin-top:0;">
       Charted
     </div>
-    <p class="hero-sub">19 rendering engines. Real price data as the input.<br>2,100 unrepeatable outputs. The algorithm is the art.</p>
+    <p class="hero-sub">19 rendering engines. Real price data as the input.<br><span class="marker-struck">2,100</span> <span class="marker-new">338</span> unrepeatable outputs. The algorithm is the art.</p>
     <div class="hero-divider"></div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <span class="hero-stat-n" data-count="2100">0</span>
+        <span class="hero-stat-n" data-count="338">0</span>
         <span class="hero-stat-l">Total Supply</span>
       </div>
       <div class="hero-stat">
@@ -1003,7 +1034,7 @@ footer::before{
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">ERC-721 Standard</div>
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">Ethereum Mainnet</div>
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,212,255,0.6);text-transform:uppercase;text-align:center;">Mint: 0.001 ETH</div>
-    <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">2,100 Hard Cap</div>
+    <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;"><span class="marker-struck">2,100</span> <span class="marker-new">338</span> Supply</div>
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">Seeded On-Chain</div>
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">Zero AI Generation</div>
     <div style="padding:0 24px;border-right:1px solid rgba(0,201,122,0.1);font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:rgba(0,201,122,0.5);text-transform:uppercase;text-align:center;">No Pre-Made Assets</div>
@@ -1018,7 +1049,7 @@ footer::before{
         <div class="s-title">Built<br>Different.</div>
         <div class="s-rule"></div>
         <div class="why-left">
-          <p>CHARTED is a <strong>2,100-piece generative art collection</strong> built from real historical price data spanning 1999 to 2026. Every major market moment of the modern era — every bubble, collapse, and parabolic run — rendered as unrepeatable generative art.</p>
+          <p>CHARTED is a <strong>338-piece generative art collection</strong> built from real historical price data spanning 1999 to 2026. Every major market moment of the modern era — every bubble, collapse, and parabolic run — rendered as unrepeatable generative art.</p>
           <p>We didn't generate images. We <strong>built 19 rendering engines from scratch</strong>. Each one is a completely separate visual world the algorithm steps into and draws inside of. Same price curve, 19 different outputs. That's not rarity — that's architecture.</p>
           <p>Supply is <strong>2,100</strong> — not arbitrary. Bitcoin's hard cap is 21,000,000. Divide by 10,000. If you got that immediately, you understand what kind of collection this is.</p>
         </div>
@@ -1083,46 +1114,163 @@ footer::before{
   <div class="section-inner">
     <div class="reveal">
       <div class="s-label">Rarity Architecture</div>
-      <div class="s-title">Six Tiers.</div>
+      <div class="s-title">Eight Tiers.</div>
       <div class="s-rule"></div>
     </div>
-    <div class="tiers-grid reveal reveal-delay-1">
-      <div class="tier t-A" style="border-color:rgba(232,201,122,0.4);background:rgba(232,201,122,0.04);">
-        <div class="tier-label" style="color:var(--gold);">Artifact</div>
-        <div class="tier-count" style="color:var(--gold);">21</div>
-        <div class="tier-sub">21 events × 1 edition<br>Pizza Day · Genesis Block · 9/11<br>True 1-of-1 · Gold Deed format</div>
+    <div style="position:relative;margin-bottom:40px;">
+      <div class="tiers-grid reveal reveal-delay-1" style="grid-template-columns:repeat(4,1fr);position:relative;z-index:1;">
+        <div class="tier t-A" style="border-color:rgba(232,201,122,0.4);background:rgba(232,201,122,0.04);">
+          <div class="tier-label" style="color:var(--gold);">Signature</div>
+          <div class="tier-count" style="color:var(--gold);">21</div>
+          <div class="tier-sub">1 of 1 edition<br>Most consequential<br>market events</div>
+        </div>
+        <div class="tier t-M">
+          <div class="tier-label">Mythic</div>
+          <div class="tier-count">15</div>
+          <div class="tier-sub">Rarest tier<br>Extreme market<br>impact events</div>
+        </div>
+        <div class="tier t-L">
+          <div class="tier-label">Ultra</div>
+          <div class="tier-count">18</div>
+          <div class="tier-sub">Very rare<br>Historic systemic<br>events</div>
+        </div>
+        <div class="tier t-R">
+          <div class="tier-label">Legendary</div>
+          <div class="tier-count">44</div>
+          <div class="tier-sub">Iconic moments<br>Major institutional<br>impact</div>
+        </div>
+        <div class="tier t-U">
+          <div class="tier-label">Epic</div>
+          <div class="tier-count">55</div>
+          <div class="tier-sub">Significant events<br>Market-moving<br>dynamics</div>
+        </div>
+        <div class="tier" style="border-color:rgba(240,180,41,0.4);background:rgba(240,180,41,0.04);">
+          <div class="tier-label" style="color:var(--gold2);">Rare</div>
+          <div class="tier-count" style="color:var(--gold2);">58</div>
+          <div class="tier-sub">Important events<br>Major crashes<br>& peaks</div>
+        </div>
+        <div class="tier t-C">
+          <div class="tier-label">Uncommon</div>
+          <div class="tier-count">63</div>
+          <div class="tier-sub">Notable moments<br>Market<br>milestones</div>
+        </div>
+        <div class="tier" style="border-color:rgba(0,201,122,0.4);background:rgba(0,201,122,0.04);">
+          <div class="tier-label" style="color:var(--bull2);">Common</div>
+          <div class="tier-count" style="color:var(--bull2);">64</div>
+          <div class="tier-sub">Foundational<br>events that<br>shaped markets</div>
+        </div>
       </div>
-      <div class="tier t-M">
-        <div class="tier-label">Mythic</div>
-        <div class="tier-count">63</div>
-        <div class="tier-sub">3 events × 21 editions<br>Dot-Com · BTC 2017 · Lehman<br>Rarest rendering systems only</div>
+      <!-- Hand-made red X overlay -->
+      <svg style="position:absolute;top:-10%;left:-5%;width:110%;height:120%;pointer-events:none;z-index:2;" viewBox="0 0 680 350" preserveAspectRatio="none">
+        <!-- Left-to-right diagonal (slightly curved, hand-drawn feel) -->
+        <path d="M 20 10 Q 340 160 680 320" stroke="#e8404a" stroke-width="12" fill="none" opacity="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 30 5 Q 345 165 685 325" stroke="#ff5566" stroke-width="7" fill="none" opacity="0.25" stroke-linecap="round"/>
+        
+        <!-- Right-to-left diagonal (slightly curved, hand-drawn feel) -->
+        <path d="M 680 10 Q 340 160 20 320" stroke="#e8404a" stroke-width="12" fill="none" opacity="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 685 5 Q 345 165 30 325" stroke="#ff5566" stroke-width="7" fill="none" opacity="0.25" stroke-linecap="round"/>
+      </svg>
+    </div>
+    
+    <!-- Honest note about tier sacrifice -->
+    <div style="background:rgba(232,64,74,0.06);border:2px dashed rgba(232,64,74,0.4);border-radius:8px;padding:40px;margin:40px 0;text-align:center;position:relative;">
+      <div style="font-family:'Caveat',cursive;font-size:52px;font-weight:700;color:#ff5566;transform:rotate(-2deg);margin-bottom:20px;text-shadow:0 0 20px rgba(255,85,102,0.3);">
+        Tiers got sacrificed.
       </div>
-      <div class="tier t-L">
-        <div class="tier-label">Legendary</div>
-        <div class="tier-count">189</div>
-        <div class="tier-sub">9 events × 21 editions<br>9/11 · COVID · Oil -$37 · Gold $5,595<br>Exclusive style access</div>
-      </div>
-      <div class="tier t-R">
-        <div class="tier-label">Rare</div>
-        <div class="tier-count">231</div>
-        <div class="tier-sub">7 events × 33 editions<br>APE ATH · Punk Royalty · Azuki<br>NFT market history</div>
-      </div>
-      <div class="tier t-U">
-        <div class="tier-label">Uncommon</div>
-        <div class="tier-count">966</div>
-        <div class="tier-sub">23 events × 42 editions<br>GME · ETH Merge · Flash Crash<br>19 distinct styles</div>
-      </div>
-      <div class="tier t-C">
-        <div class="tier-label">Common</div>
-        <div class="tier-count">630</div>
-        <div class="tier-sub">30 events × 21 editions<br>BTC ATH · Gold ATH · NASDAQ Bear<br>Entry to the archive</div>
+      <p style="font-family:'Rajdhani',sans-serif;font-size:14px;line-height:2;color:var(--text);max-width:700px;margin:0 auto;">
+        Supply cut 2,100 → 338. The original tier labels are written on every NFT. We restructured these display tiers by actual rarity — but the images still show what was minted. This is the real breakdown. No marketing cleanup. No BS.
+      </p>
+      <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text3);margin-top:20px;letter-spacing:1px;">
+        NFT tier labels ≠ site display tiers. Holders know what they got.
+      </p>
+    </div>
+
+    <!-- Original metadata tiers COMPACT with interactive candlestick bg -->
+    <div style="margin-top:80px;padding:60px;background:var(--bg2);border:1px solid rgba(0,212,255,0.1);position:relative;overflow:hidden;">
+      <!-- Candlestick background animation -->
+      <canvas id="candlestickCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.08;z-index:0;"></canvas>
+      
+      <div style="position:relative;z-index:1;">
+        <div style="font-family:'Caveat',cursive;font-size:36px;font-weight:700;color:#ff5566;transform:rotate(-1deg);margin-bottom:24px;display:flex;align-items:center;gap:12px;">
+          <span style="font-size:32px;color:#00d4ff;">✓</span>
+          Original NFT Tiers (as minted):
+        </div>
+        
+        <!-- Compact tier list -->
+        <div style="font-family:'Caveat',cursive;font-size:20px;line-height:2.2;color:#ff5566;max-width:400px;">
+          <div>Base 64 · Mythic 63 · Uncommon 58</div>
+          <div>Gold Series 55 · Collection 44</div>
+          <div>Signature 21 · Legendary 18 · Rare 15</div>
+          <div style="margin-top:16px;font-size:18px;color:#00d4ff;font-weight:700;">
+            Total: 338
+          </div>
+        </div>
       </div>
     </div>
-    <p style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text4);line-height:2;text-align:center;max-width:600px;margin:0 auto;" class="reveal reveal-delay-2">
-      The rarity isn't a number pulled from a hat. It's architectural.<br>
-      Each tier unlocks different rendering systems and different source events.<br>
-      MYTHIC pieces run visual systems that don't exist at lower tiers.
-    </p>
+
+    <script>
+    // Candlestick animation with mouse tracking
+    const canvas = document.getElementById('candlestickCanvas');
+    const ctx = canvas.getContext('2d');
+    let mouseX = canvas.width / 2;
+    let mouseY = canvas.height / 2;
+    
+    function resizeCanvas() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    
+    document.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+    });
+    
+    function drawCandlestick(x, y, open, close, high, low, mouseInfluence) {
+      const isGreen = close >= open;
+      const baseColor = isGreen ? '#00c97a' : '#e8404a';
+      const colorIntensity = 0.3 + (mouseInfluence * 0.7);
+      
+      // Body
+      const bodyColor = isGreen ? `rgba(0,201,122,${colorIntensity})` : `rgba(232,64,74,${colorIntensity})`;
+      ctx.fillStyle = bodyColor;
+      const bodyTop = isGreen ? close : open;
+      const bodyHeight = Math.abs(close - open) || 2;
+      ctx.fillRect(x - 3, y - bodyTop, 6, bodyHeight);
+      
+      // Wick
+      ctx.strokeStyle = bodyColor;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(x, y - high);
+      ctx.lineTo(x, y - low);
+      ctx.stroke();
+    }
+    
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      const candleCount = Math.floor(canvas.width / 20);
+      for (let i = 0; i < candleCount; i++) {
+        const x = (i * 20) + 10;
+        const distToMouse = Math.hypot(x - mouseX, 50 - mouseY);
+        const mouseInfluence = Math.max(0, 1 - (distToMouse / 300));
+        
+        const open = 30 + Math.sin(i * 0.5 + Date.now() * 0.001) * 20;
+        const close = 30 + Math.cos(i * 0.5 + Date.now() * 0.001 + mouseInfluence) * 20;
+        const high = Math.max(open, close) + 10;
+        const low = Math.min(open, close) - 10;
+        
+        drawCandlestick(x, 50, open, close, high, low, mouseInfluence);
+      }
+      
+      requestAnimationFrame(animate);
+    }
+    animate();
+    </script>
+
   </div>
 </section>
 
@@ -1187,66 +1335,26 @@ footer::before{
   </div>
 </section>
 
-<!-- ROADMAP -->
-<section class="section" id="roadmap" style="border-top:1px solid var(--border2);background:var(--bg2);">
-  <div class="section-inner">
-    <div class="reveal">
-      <div class="s-label">What Comes Next</div>
-      <div class="s-title">Roadmap.</div>
-      <div class="s-rule"></div>
+<!-- GENESIS COLLECTION -->
+<section class="section" id="genesis" style="border-top:1px solid var(--border2);background:var(--bg2);padding:80px 40px;">
+  <div style="max-width:1000px;margin:0 auto;text-align:center;position:relative;">
+    <div style="font-family:'Caveat',cursive;font-size:64px;font-weight:700;color:#ff5566;transform:rotate(-3deg);margin-bottom:20px;text-shadow:0 0 20px rgba(255,85,102,0.3);">
+      This is genesis.
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid var(--border2);" class="reveal">
-
-      <div style="padding:32px 28px;border-right:1px solid var(--border);background:var(--surface);position:relative;">
-        <div style="font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--bull2);margin-bottom:12px;">Phase I · Now</div>
-        <div style="font-family:'Orbitron',sans-serif;font-weight:700;font-size:18px;color:var(--text);margin-bottom:14px;line-height:1.1;">Build the List</div>
-        <div style="width:32px;height:1px;background:var(--bull);margin-bottom:16px;box-shadow:0 0 8px var(--bull);"></div>
-        <ul style="list-style:none;padding:0;font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text2);line-height:2.4;">
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--bull2);text-shadow:0 0 8px rgba(0,255,157,0.5);">▶</span> Site launch</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--bull2);text-shadow:0 0 8px rgba(0,255,157,0.5);">▶</span> Whitelist open</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--bull2);text-shadow:0 0 8px rgba(0,255,157,0.5);">▶</span> Collection preview live</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--bull2);text-shadow:0 0 8px rgba(0,255,157,0.5);">▶</span> @chartedNFT on X</li>
-        </ul>
-        <div style="position:absolute;top:20px;right:20px;width:8px;height:8px;border-radius:50%;background:var(--bull2);box-shadow:0 0 10px var(--bull2);animation:pulse-dot 2s ease-in-out infinite;"></div>
+    <p style="font-family:'Rajdhani',sans-serif;font-size:16px;line-height:2;color:var(--text);max-width:700px;margin:0 auto 40px;">
+      CHARTED is <strong>Scar's genesis collection</strong>. 338 pieces documenting the events that shaped modern markets.
+    </p>
+    <div style="background:rgba(232,64,74,0.08);border:1px dashed rgba(232,64,74,0.3);border-radius:8px;padding:32px;margin:40px 0;">
+      <div style="font-family:'Caveat',cursive;font-size:48px;font-weight:700;color:#ff5566;transform:rotate(-2deg);margin-bottom:16px;">
+        holders get airdropped all future drops
       </div>
-
-      <div style="padding:32px 28px;border-right:1px solid var(--border);background:var(--surface);">
-        <div style="font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--text4);margin-bottom:12px;">Phase II · TBA</div>
-        <div style="font-family:'Orbitron',sans-serif;font-weight:700;font-size:18px;color:var(--text);margin-bottom:14px;line-height:1.1;">The Mint</div>
-        <div style="width:32px;height:1px;background:var(--border2);margin-bottom:16px;"></div>
-        <ul style="list-style:none;padding:0;font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text3);line-height:2.4;">
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Whitelist mint window</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Public mint opens</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Cards generate on-chain</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Metadata revealed</li>
-        </ul>
-      </div>
-
-      <div style="padding:32px 28px;border-right:1px solid var(--border);background:var(--surface);">
-        <div style="font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--text4);margin-bottom:12px;">Phase III · Post-Mint</div>
-        <div style="font-family:'Orbitron',sans-serif;font-weight:700;font-size:18px;color:var(--text);margin-bottom:14px;line-height:1.1;">The Gallery</div>
-        <div style="width:32px;height:1px;background:var(--border2);margin-bottom:16px;"></div>
-        <ul style="list-style:none;padding:0;font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text3);line-height:2.4;">
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Holder-only gallery</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Trait &amp; rarity explorer</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Card verify tool</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Secondary market TBA</li>
-        </ul>
-      </div>
-
-      <div style="padding:32px 28px;background:var(--surface);">
-        <div style="font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:var(--text4);margin-bottom:12px;">Phase IV · Future</div>
-        <div style="font-family:'Orbitron',sans-serif;font-weight:700;font-size:18px;color:var(--text);margin-bottom:14px;line-height:1.1;">The Archive</div>
-        <div style="width:32px;height:1px;background:var(--border2);margin-bottom:16px;"></div>
-        <ul style="list-style:none;padding:0;font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text3);line-height:2.4;">
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> New events added</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Holder community</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> Provenance dashboard</li>
-          <li style="display:flex;gap:10px;align-items:baseline;"><span style="color:var(--text4);">◇</span> TBA</li>
-        </ul>
-      </div>
-
+      <p style="font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--text3);letter-spacing:1px;">
+        Every holder of CHARTED receives all subsequent collections from Scar. This is the foundation. Everything that follows is earned by those who were here from the start.
+      </p>
     </div>
+    <a href="https://opensea.io/collection/charted-304957291/overview" target="_blank" style="display:inline-block;margin-top:20px;padding:14px 32px;border:1px solid var(--bull);color:var(--bull);text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:all .3s;cursor:pointer;">
+      Mint on OpenSea ↗
+    </a>
   </div>
 </section>
 
@@ -1335,102 +1443,19 @@ footer::before{
 </section>
 
 <!-- CTA -->
-<section class="section cta-section" id="mint">
-  <div class="cta-bg-text">CHARTED</div>
-  <div class="cta-inner reveal">
-    <div class="cta-eyebrow">NFT Collection · 2,100 Supply · Est. MMXXIV</div>
-    <div class="cta-title">
-      Own a piece of
-      <em>financial history.</em>
+<section class="section" style="border-top:1px solid var(--border2);background:var(--bg2);padding:80px 40px;text-align:center;">
+  <div style="max-width:800px;margin:0 auto;">
+    <div style="font-family:'Caveat',cursive;font-size:56px;font-weight:700;color:#ff5566;transform:rotate(-2deg);margin-bottom:24px;text-shadow:0 0 20px rgba(255,85,102,0.3);">
+      mint live now
     </div>
-    <p class="cta-sub">
-      2,100 generative pieces. 78 real events. 19 rendering engines.<br>
-      The algorithm runs. The output is permanent. The card is yours.
+    <p style="font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--text2);letter-spacing:2px;margin-bottom:32px;text-transform:uppercase;">
+      0.0005 ETH · Ethereum · OpenSea
     </p>
-    <div class="hero-cta" style="justify-content:center;">
-      <a href="#whitelist" class="btn-gold">Apply for Whitelist</a>
-      <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" class="btn-ghost">Follow @chartedNFT ↗</a>
-    </div>
-    <div class="cta-note">Mint Price: 0.001 ETH · Ethereum Mainnet · Date: TBA · Follow @chartedNFT</div>
-  </div>
-</section>
-
-<!-- WHITELIST FORM -->
-<section class="section wl-section" id="whitelist" style="border-top:1px solid var(--border2);background:var(--bg2);position:relative;overflow:hidden;">
-  <!-- Decorative bg text -->
-  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--fraktur);font-size:clamp(80px,18vw,220px);color:rgba(0,212,255,0.025);white-space:nowrap;pointer-events:none;user-select:none;letter-spacing:0.05em;">WHITELIST</div>
-  <div class="section-inner" style="max-width:680px;position:relative;z-index:1;">
-    <!-- Header -->
-    <div class="reveal" style="text-align:center;margin-bottom:48px;">
-      <div style="font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:5px;text-transform:uppercase;color:var(--bull);margin-bottom:16px;">Early Access</div>
-      <div style="font-family:var(--fraktur);font-size:clamp(38px,6vw,64px);color:var(--text);line-height:1.1;margin-bottom:16px;text-shadow:0 0 40px rgba(0,212,255,0.15);">Reserve Your Spot</div>
-      <div style="width:60px;height:1px;background:var(--bull);margin:0 auto 20px;box-shadow:0 0 10px var(--bull);"></div>
-      <p style="font-family:'Rajdhani',sans-serif;font-size:14px;color:var(--text2);line-height:1.9;max-width:480px;margin:0 auto;font-weight:400;">
-        Whitelist gives you priority access before public mint. Fill in your details — we'll reach out on X when the date is confirmed.
-      </p>
-    </div>
-
-    <!-- Form card -->
-    <div style="background:var(--surface);border:1px solid var(--border2);padding:40px 44px;position:relative;" id="wlFormWrap">
-      <!-- Corner ornaments -->
-      <div style="position:absolute;top:10px;left:10px;width:20px;height:20px;border-top:1px solid var(--bull);border-left:1px solid var(--bull);"></div>
-      <div style="position:absolute;top:10px;right:10px;width:20px;height:20px;border-top:1px solid var(--bull);border-right:1px solid var(--bull);"></div>
-      <div style="position:absolute;bottom:10px;left:10px;width:20px;height:20px;border-bottom:1px solid var(--bull);border-left:1px solid var(--bull);"></div>
-      <div style="position:absolute;bottom:10px;right:10px;width:20px;height:20px;border-bottom:1px solid var(--bull);border-right:1px solid var(--bull);"></div>
-
-      <div id="wlForm">
-        <!-- X Username -->
-        <div style="margin-bottom:24px;">
-          <label style="display:block;font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:var(--accent2);margin-bottom:8px;">X (Twitter) Username</label>
-          <div style="position:relative;">
-            <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--bull);">@</span>
-            <input type="text" id="wlX" placeholder="yourhandle"
-              style="width:100%;padding:13px 14px 13px 30px;background:var(--bg2);border:1px solid var(--border2);border-radius:0;font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--text);outline:none;transition:border-color .2s;caret-color:var(--bull);"
-              onfocus="this.style.borderColor='rgba(0,201,122,0.5)'"
-              onblur="this.style.borderColor='rgba(0,180,100,0.12)'">
-          </div>
-        </div>
-
-        <!-- Wallet -->
-        <div style="margin-bottom:32px;">
-          <label style="display:block;font-family:'Share Tech Mono',monospace;font-size:8px;letter-spacing:4px;text-transform:uppercase;color:var(--accent2);margin-bottom:8px;">EVM Wallet Address</label>
-          <input type="text" id="wlWallet" placeholder="0x..."
-            style="width:100%;padding:13px 14px;background:var(--bg2);border:1px solid var(--border2);border-radius:0;font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--text);outline:none;transition:border-color .2s;"
-            onfocus="this.style.borderColor='rgba(0,201,122,0.5)'"
-            onblur="this.style.borderColor='rgba(0,180,100,0.12)'">
-        </div>
-
-        <!-- Error msg -->
-        <div id="wlError" style="display:none;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--bear2);margin-bottom:16px;padding:10px 14px;background:rgba(139,26,10,0.06);border:1px solid rgba(139,26,10,0.15);"></div>
-
-        <!-- Submit -->
-        <button onclick="submitWL()"
-          style="width:100%;padding:15px 24px;background:var(--bull);color:#000;border:none;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));font-family:var(--mono);font-size:10px;letter-spacing:4px;text-transform:uppercase;cursor:pointer;transition:opacity .2s;position:relative;overflow:hidden;"
-          onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'" id="wlBtn">
-          Submit Application
-        </button>
-
-        <p style="font-family:var(--mono);font-size:8px;color:rgba(26,16,8,0.28);text-align:center;margin-top:16px;letter-spacing:1px;">
-          Whitelist = priority access, not guaranteed allocation · No spam · Data used for mint only
-        </p>
-      </div>
-
-      <!-- Success state -->
-      <div id="wlSuccess" style="display:none;text-align:center;padding:20px 0;">
-        <div style="font-size:32px;margin-bottom:16px;">✦</div>
-        <div style="font-family:'Orbitron',sans-serif;font-size:22px;color:var(--bull2);margin-bottom:12px;">Application Received</div>
-        <div style="width:40px;height:1px;background:var(--bull);margin:0 auto 16px;box-shadow:0 0 8px var(--bull);"></div>
-        <p style="font-family:'Rajdhani',sans-serif;font-weight:400;font-size:14px;color:var(--text2);line-height:1.8;">
-          We'll review your application and follow up on X.<br>
-          Follow <strong><a href="https://x.com/chartedNFT" target="_blank" rel="noopener" style="color:var(--accent);">@chartedNFT</a></strong> for mint announcement.
-        </p>
-      </div>
-    </div>
-
-    <!-- Fine print -->
-    <p style="font-family:var(--mono);font-size:8px;color:rgba(26,16,8,0.22);text-align:center;margin-top:24px;letter-spacing:1px;line-height:2;">
-      WHITELIST DOES NOT GUARANTEE ALLOCATION · SUBJECT TO COMMUNITY STANDARDS<br>
-      DATA USED FOR MINT DISTRIBUTION ONLY · NOT STORED WITH THIRD PARTIES
+    <a href="https://opensea.io/collection/charted-304957291/overview" target="_blank" rel="noopener" style="display:inline-block;padding:16px 40px;background:var(--bull);color:#000;text-decoration:none;font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700;transition:all .3s;border:2px solid var(--bull);">
+      Go to OpenSea ↗
+    </a>
+    <p style="font-family:'Rajdhani',sans-serif;font-size:13px;color:var(--text3);margin-top:32px;line-height:1.8;">
+      338 pieces. 8 tiers. 78 events. Mint ends when supply is claimed.
     </p>
   </div>
 </section>
@@ -1440,14 +1465,14 @@ footer::before{
   <div class="footer-logo">Charted</div>
   <div class="footer-mid">
     <p>
-      © 2025 CHARTED · 2,100 Unique NFTs<br>
+      © 2025 CHARTED · 338 Unique NFTs<br>
       78 Historical Events · 1999–2026<br>
       All Charts. All Time. No Exceptions.
     </p>
     <p style="margin-top:12px;font-family:var(--mono);font-size:9px;letter-spacing:2px;">
       <a href="https://x.com/chartedNFT" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">@chartedNFT on X ↗</a>
       &nbsp;·&nbsp;
-      <a href="#whitelist" style="color:var(--text3);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">Join Whitelist</a>
+      <a href="https://opensea.io/collection/charted-304957291/overview" target="_blank" rel="noopener" style="color:var(--text3);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">OpenSea ↗</a>
       &nbsp;·&nbsp;
       <a href="#faq" style="color:var(--text3);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text3)'">FAQ</a>
     </p>
@@ -1457,7 +1482,7 @@ footer::before{
       ERC-721 · Ethereum Mainnet<br>
       19 Rendering Systems<br>
       Seeded Deterministic Output<br>
-      Mint Price: 0.001 ETH
+      Mint Price: 0.0005 ETH
     </p>
   </div>
 </footer>
@@ -3232,32 +3257,6 @@ window.addEventListener('load',()=>{
 });
 
 /* ── WHITELIST FORM ── */
-function submitWL(){
-  const xVal   = document.getElementById('wlX').value.trim().replace(/^@/,'');
-  const wallet = document.getElementById('wlWallet').value.trim();
-  const errEl  = document.getElementById('wlError');
-  const btn    = document.getElementById('wlBtn');
-  errEl.style.display='none';
-  if(!xVal){errEl.textContent='Please enter your X username.';errEl.style.display='block';return;}
-  if(!wallet){errEl.textContent='Please enter your wallet address.';errEl.style.display='block';return;}
-  if(!wallet.match(/^0x[a-fA-F0-9]{40}$/)){errEl.textContent='Please enter a valid Ethereum wallet address (0x...).';errEl.style.display='block';return;}
-  btn.textContent='Submitting...';btn.disabled=true;
-  try{
-    const e=JSON.parse(localStorage.getItem('wl')||'[]');
-    e.push({x:'@'+xVal,wallet,ts:new Date().toISOString()});
-    localStorage.setItem('wl',JSON.stringify(e));
-  }catch(e){}
-  const url='https://docs.google.com/forms/d/e/1FAIpQLScUeD7yHcovbpc5fgharA81-lnJT6RljanIFa5S9-mNDDFujg/formResponse';
-  const body=new URLSearchParams();
-  body.append('entry.875593583','@'+xVal);
-  body.append('entry.484593186',wallet);
-  fetch(url,{method:'POST',mode:'no-cors',body}).then(()=>showWLSuccess()).catch(()=>showWLSuccess());
-}
-function showWLSuccess(){
-  document.getElementById('wlForm').style.display='none';
-  document.getElementById('wlSuccess').style.display='block';
-}
-
 /* ── FAQ TOGGLE ── */
 function toggleFaq(el){
   const isOpen=el.classList.contains('open');
